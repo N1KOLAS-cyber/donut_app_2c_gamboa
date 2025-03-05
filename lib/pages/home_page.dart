@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
             padding:  EdgeInsets.symmetric(horizontal: 36, vertical: 18),
             child: Row(
               children: [
-                Text("I want to  ", 
+                Text("I want to ", 
                 style: TextStyle(
                   //Tipografia 
                   fontFamily: "ComicStrip" ,
