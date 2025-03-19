@@ -1,7 +1,7 @@
 import 'package:donut_app_2c_gamboa/utils/donut_tile.dart';
 import 'package:flutter/material.dart';
 
-class SmoothieTab extends StatelessWidget {
+class BugerTab extends StatelessWidget {
 
   //lista de donas
     final List donutsOnSale = [
@@ -18,7 +18,7 @@ class SmoothieTab extends StatelessWidget {
 
 
   ]; 
-  SmoothieTab({super.key});
+  BugerTab({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-import 'package:donut_app_2c_gamboa/tabs/buger_tab.dart';
+import 'package:donut_app_2c_gamboa/tabs/bugger_tab.dart';
 import 'package:donut_app_2c_gamboa/tabs/donut_tab.dart';
 import 'package:donut_app_2c_gamboa/tabs/panckes_tab.dart';
 import 'package:donut_app_2c_gamboa/tabs/pizza_tab.dart';
@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
         Expanded(
           child: TabBarView(children: [
             DonutTab(),
-            BurgerTab(),
+            BugerTab(),
             SmoothieTab(),
             PanckesTab(),
             PizzaTab(),
@@ -94,13 +94,13 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: const EdgeInsets.all(5.0),
+                padding: const EdgeInsets.all(0.5),
                 child: Column(
                   //aliniear horizontalmente  una columna
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("2 items | \$45",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold) ),
-                    Text("Delivery Charges Include",style: TextStyle(fontSize: 18) ),
+                    Text("Delivery Charges Include",style: TextStyle(fontSize: 12) ),
                 
                   ],
                 ),
@@ -113,7 +113,13 @@ class _HomePageState extends State<HomePage> {
                 vertical: 12
                 ),
               ),
-               child: Text("View Cart", style: TextStyle( fontWeight: FontWeight.bold,color: Colors.white),
+               child:Row(
+                 children: [
+                  Icon(Icons.shopping_cart, color: Colors.white,),
+                   SizedBox(width: 8,),
+                   Text("View Cart", style: TextStyle( fontWeight: FontWeight.bold,color: Colors.white),
+                   ),
+                 ],
                ),
           )],
           ),
