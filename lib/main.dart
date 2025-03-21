@@ -13,15 +13,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Uber Eats 2',
+      title: 'Flutter Demo',
       theme: ThemeData(
-        tabBarTheme: const TabBarTheme(indicatorColor: Colors.pink),
-        
+        tabBarTheme: const TabBarTheme(
+          indicatorColor: Colors.pink,
+        ),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-
       ),
       home: const HomePage(),
     );
   }
 }
+//cual es la carpeta principal de mi proyecto: lib
+//cual es el archivo para agregar recursos y dependencias: pubspec.yaml
