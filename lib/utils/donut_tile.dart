@@ -33,7 +33,7 @@ class DonutTile extends StatelessWidget {
             // Etiqueta de precio
             Row(
               mainAxisAlignment:
-                  MainAxisAlignment.end, // Alinea el contenido a la derecha
+                  MainAxisAlignment.spaceBetween, // Alinea el contenido a la derecha
               children: [
                 Container(
                   decoration: BoxDecoration(
@@ -83,26 +83,29 @@ class DonutTile extends StatelessWidget {
             // Icono de amor + palabr "add" (se puede agregar aquí) usando un row
             Padding(
               padding: const EdgeInsets.all(1.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(
-                    Icons.favorite,
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      onAdd(); // Llama a la función para agregar al carrito
-                    },
-                    child: Text(
-                      "add",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w300,
-                        fontSize: 15,
-                        decoration: TextDecoration.underline,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.favorite,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        onAdd(); // Llama a la función para agregar al carrito
+                      },
+                      child: Text(
+                        "Add",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 15,
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             )
             //b
